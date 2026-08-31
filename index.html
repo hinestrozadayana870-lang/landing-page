@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agencia Digital</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>Agencia Digital</h1>
+      <ul>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#trabajos">Trabajos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="https://www.sena.edu.co" target="_blank">SENA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main class="container">
+
+    <section id="inicio">
+      <h2>Servicios profesionales para tu negocio</h2>
+      <p>Creamos páginas web y soluciones digitales para que tu empresa crezca en línea.</p>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios">
+      <h2>Nuestros Servicios</h2>
+
+      <article class="row">
+        <ul class="row">
+          <li class="col-md-4 col-sm-6">
+            <article>
+              <h3>Diseño Web</h3>
+              <p>Diseñamos páginas atractivas y fáciles de usar para tu marca.</p>
+            </article>
+          </li>
+          <li class="col-md-4 col-sm-6">
+            <article>
+              <h3>Desarrollo a la medida</h3>
+              <p>Construimos funcionalidades a la medida usando HTML, CSS y Bootstrap.</p>
+            </article>
+          </li>
+          <li class="col-md-4 col-sm-6">
+            <article>
+              <h3>Marketing Digital</h3>
+              <p>Ayudamos a que más personas encuentren tu negocio en internet.</p>
+            </article>
+          </li>
+        </ul>
+      </article>
+
+
+      <table>
+        <caption>Planes y precios de nuestros servicios</caption>
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Incluye</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Básico</td>
+            <td>Página de una sección con formulario de contacto</td>
+            <td>$400.000</td>
+          </tr>
+          <tr>
+            <td>Estándar</td>
+            <td>Página con varias secciones y galería de trabajos</td>
+            <td>$800.000</td>
+          </tr>
+          <tr>
+            <td>Premium</td>
+            <td>Sitio completo con tienda en línea</td>
+            <td>$1.500.000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Galería de trabajos -->
+    <section id="trabajos">
+      <h2>Galería de Trabajos</h2>
+      <ul class="row">
+        <li class="col-md-4 col-sm-6">
+          <img src="img/diseño-web-y-marketing.webp" alt="Trabajo 1: sitio web para cafetería">
+        </li>
+        <li class="col-md-4 col-sm-6">
+          <img src="img/medida.jpg" alt="Trabajo 2: sitio web para estudio de arquitectura">
+        </li>
+        <li class="col-md-4 col-sm-6">
+          <img src="img/marketing.jpg" alt="Trabajo 3: sitio web para veterinaria">
+        </li>
+      </ul>
+    </section>
+
+    <section id="contacto">
+      <h2>Contáctanos</h2>
+
+      <form action="procesar-contacto.php" method="post">
+
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <p>Selecciona el servicio de tu interés:</p>
+
+        <label for="serv1">
+          <input type="checkbox" id="serv1" name="servicios" value="diseno">
+          Diseño Web
+        </label>
+
+        <label for="serv2">
+          <input type="checkbox" id="serv2" name="servicios" value="desarrollo">
+          Desarrollo a la medida
+        </label>
+
+        <p>Método de contacto preferido:</p>
+
+        <label for="metodo1">
+          <input type="radio" id="metodo1" name="metodo" value="correo">
+          Correo
+        </label>
+
+        <label for="metodo2">
+          <input type="radio" id="metodo2" name="metodo" value="telefono">
+          Teléfono
+        </label>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Agencia Digital-2026</p>
+  </footer>
+
+</body>
+</html>
